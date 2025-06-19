@@ -49,7 +49,7 @@
     "AUTHORS"
   ],
   "scripts": {
-    "clean": "rimraf lib dist coverage",
+    "clean": "node_modules/.bin/rimraf lib dist coverage",
     "git:changes": "git diff --name-only --diff-filter d | xargs",
     "ts:check": "tsc --noEmit",
     "ts:changes": "tsc --noEmit --incremental",
